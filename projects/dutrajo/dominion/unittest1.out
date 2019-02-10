@@ -1,0 +1,73 @@
+Test 1: testing shuffle on newly initialized game.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing shuffle on ascending sorted deck.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing shuffle on descending sorted deck.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing shuffle on a full deck (500 cards).
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing shuffle on a deck with a single card.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing shuffle on a deck with zero cards.
+	Running function Shuffle()....Expected: -1, Found: -1. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing randomness of shuffle function using two cards in deck.
+Found randomness of shuffle with 2 cards created a 50.05 : 49.95 distribution using 1000000 tests.
+------------- OVERALL TEST PASSED ---------------
+

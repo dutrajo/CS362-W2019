@@ -1,0 +1,48 @@
+Test 1: testing isGameOver function on newly initialized game (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing isGameOver function with all supply counts set to 1 card (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing isGameOver function with two supply counts set to 0 (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing isGameOver function with three supply counts set to 0 (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing isGameOver function with full supply but no province cards left (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing isGameOver function with all supply counts set to zero (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+

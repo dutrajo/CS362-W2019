@@ -1,0 +1,72 @@
+Test 1: Playing Card 'remodel', trashing a 'cutpurse' and gaining an 'adventurer' (should pass).
+	Running cardEffect For Remodel....Expected: 0, function returned: 0. Passed.
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (4 + 2 >= 6)...Passed.
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Passed.
+	Checking purchased card came from supply...Passed.
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'remodel', trashing a 'cutpurse' and gaining a 'copper' (should pass).
+	Running cardEffect For Remodel....Expected: 0, function returned: -1. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (4 + 2 >= 0)...Passed.
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Failed!!!!!
+	Checking purchased card came from supply...Failed!!!!!
+	Checking card to trash isn't in player's hand...Failed!!!!!
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'remodel', trashing a 'copper' and gaining an 'adventurer' (should fail).
+	Running cardEffect For Remodel....Expected: -1, function returned: 0. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (0 + 2 >= 6)...Failed!!!!!
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Passed.
+	Checking purchased card came from supply...Passed.
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'remodel', trashing a 'copper' and gaining an 'adventurer' when supply is empty (should fail).
+	Running cardEffect For Remodel....Expected: -1, function returned: 0. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (0 + 2 >= 6)...Failed!!!!!
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Failed!!!!!
+	Checking purchased card came from supply...Failed!!!!!
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+

@@ -1,0 +1,49 @@
+Test 1: testing fullDeckCount, looking for copper, with zero in any of player's decks.
+	Running function fullDeckCount()....Expected: 0, Found: 0. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing fullDeckCount, looking for copper, with only 1 in player's hand.
+	Running function fullDeckCount()....Expected: 1, Found: 1. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing fullDeckCount, looking for copper, with 1 in player's hand, and 1 in deck.
+	Running function fullDeckCount()....Expected: 2, Found: 2. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing fullDeckCount, looking for copper, with 1 in player's hand, 1 in deck, and 1 in discard.
+	Running function fullDeckCount()....Expected: 3, Found: 3. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing fullDeckCount, looking for copper, with MAX_HAND (500) in player's hand.
+	Running function fullDeckCount()....Expected: 500, Found: 500. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing fullDeckCount, looking for estate, with 500 in player's hand, and 500 in deck.
+	Running function fullDeckCount()....Expected: 1000, Found: 1000. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing fullDeckCount, looking for adventurer, with 500 in player's hand, 500 in deck, and 500 in discard.
+	Running function fullDeckCount()....Expected: 1500, Found: 1500. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+

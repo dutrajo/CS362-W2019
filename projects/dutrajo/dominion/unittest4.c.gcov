@@ -1,0 +1,707 @@
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <stdlib.h>
+        -:    6:#include <assert.h>
+        -:    7:#include <string.h>
+        -:    8:#include <unistd.h>
+        -:    9:
+        -:   10://set array size for output strings
+        -:   11:#define MAX_STRING_SIZE 10000
+        -:   12:
+        -:   13:
+        -:   14:/*
+        -:   15:	void initializeString(
+        -:   16:			char* str,
+        -:   17:			int size
+        -:   18:			)
+        -:   19:	Parameters:
+        -:   20:		char* str: char* array to initialize
+        -:   21:		int size: size of char* array
+        -:   22:	Returns:
+        -:   23:		Nothing
+        -:   24:	Description:
+        -:   25:		Will set all of the char array to '\0' characters
+        -:   26:		to ensure a proper formatted string.
+        -:   27:*/
+function initializeString called 78 returned 100% blocks executed 100%
+       78:   28:void initializeString(char *str, int size)
+        -:   29:{
+        -:   30:	//validate pointer isn't null
+       78:   31:	if (str != NULL)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:   32:	{
+        -:   33:		//initialize array to all '\0' characters
+       78:   34:		memset(str, '\0', sizeof(char) * size);
+        -:   35:	}
+       78:   36:}
+        -:   37:
+        -:   38:/*
+        -:   39:	void customPrintf(
+        -:   40:			char* line,
+        -:   41:			FILE* outputFile
+        -:   42:			)
+        -:   43:	Parameters:
+        -:   44:		char* line: string to output,
+        -:   45:		FILE* outputFile: file pointer to output file (can be null)
+        -:   46:	Returns:
+        -:   47:		Nothing
+        -:   48:	Description:
+        -:   49:		Will output a string (ends with '\0') to the console as well
+        -:   50:		as to the output file if the pointer isn't null.
+        -:   51:*/
+function customPrintf called 72 returned 100% blocks executed 100%
+       72:   52:void customPrintf(char* line, FILE* outputFile)
+        -:   53:{
+        -:   54:	//output the line to the console
+       72:   55:	printf("%s", line);
+call    0 returned 100%
+        -:   56:
+        -:   57:	//check if the file pointer is null
+       72:   58:	if (outputFile != NULL)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:   59:	{
+        -:   60:		//not null, so output to file
+       72:   61:		fprintf(outputFile, "%s", line);
+call    0 returned 100%
+        -:   62:	}
+        -:   63:
+        -:   64:	//re-initialize string 
+       72:   65:	initializeString(line, MAX_STRING_SIZE);
+call    0 returned 100%
+       72:   66:}
+        -:   67:
+        -:   68:
+        -:   69:
+        -:   70:/*
+        -:   71:	int validateIsGameOverFunction(
+        -:   72:		int *kingdomCards,
+        -:   73:		int kingdomCardsSize,
+        -:   74:		struct gameState *G,
+        -:   75:		int detailedOutput,
+        -:   76:		FILE* outputFile,
+        -:   77:		int expectedPassOrFail,
+        -:   78:		int exitAfterFunctionFail
+        -:   79:		)
+        -:   80:	Parameters:
+        -:   81:		int *kingdomCards: pointer to an array of kingdom cards
+        -:   82:		int kingdomCardsSize: int size of array pointed to 
+        -:   83:		struct gameState *G: gameState to use
+        -:   84:		int detailedOutput: indicate if detailed output is needed
+        -:   85:		FILE* outputFile: file to output results to (can be null)
+        -:   86:		int expectedPassOrFail: what we expect the initial function call to return
+        -:   87:		int exitAfterFunctionFail: if we should stop test if we don't get expected output
+        -:   88:	Returns:
+        -:   89:		int, 0 if fail, 1 if succes
+        -:   90:	Description:
+        -:   91:		This function can be used to perform a single test on a valid gameState object
+        -:   92:		using the isGameOver function. It will determine if the current game is over
+        -:   93:		by calling the isGameOver function and then testing to ensure that the function
+        -:   94:		didn't modify anything it wasn't supposed to. It will also test to ensure the
+        -:   95:		game over calcuation is done correctly.
+        -:   96:*/
+function validateIsGameOverFunction called 6 returned 100% blocks executed 77%
+        6:   97:int validateIsGameOverFunction(
+        -:   98:	int *kingdomCards,
+        -:   99:	int kingdomCardsSize,
+        -:  100:	struct gameState *G,
+        -:  101:	int detailedOutput,//0 = no output, 1 = output
+        -:  102:	FILE* outputFile,
+        -:  103:	int expectedPassOrFail, //0 = expect fail, 1 = expect pass
+        -:  104:	int exitAfterFunctionFail //1 = exit test if function != expected
+        -:  105:)
+        -:  106:{
+        -:  107:
+        -:  108:	struct gameState tempG;
+        -:  109:
+        -:  110:	//create dynamic memory for output string
+        6:  111:	char *str = malloc(sizeof(char) * MAX_STRING_SIZE);
+        -:  112:
+        -:  113:	//initialize the string
+        6:  114:	initializeString(str, MAX_STRING_SIZE);
+call    0 returned 100%
+        -:  115:
+        -:  116:	//first copy gameState to test object
+        6:  117:	memcpy(&tempG, G, sizeof(struct gameState));
+        -:  118:
+        -:  119:	//indicator for individual test pass
+        6:  120:	int passesCheck = 1;
+        -:  121:
+        -:  122:	//indiciator for all test pass
+        6:  123:	int overallTestPass = 1;
+        -:  124:
+        -:  125:	//counter variable
+        6:  126:	int i = 0;
+        6:  127:	int j = 0;
+        -:  128:
+        -:  129:	//results stuff
+        6:  130:	int expected = 0;
+        6:  131:	int found = 0;
+        -:  132:
+        -:  133:	//set check
+        6:  134:	passesCheck = 1;
+        -:  135:
+        -:  136:	//execute the card effect
+        6:  137:	sprintf(str, "\tRunning function isGameOver()....");
+        6:  138:	if (detailedOutput) customPrintf(str, outputFile);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+call    2 returned 100%
+        -:  139:
+        6:  140:	found = isGameOver(&tempG);
+call    0 returned 100%
+        6:  141:	expected = expectedPassOrFail;
+        -:  142:
+        6:  143:	if (found != expected)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  144:	{
+    #####:  145:		passesCheck = overallTestPass = 0;
+        -:  146:	}
+        -:  147:
+        -:  148:	//output status to screen and file
+        6:  149:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  150:	{
+        6:  151:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  152:		{
+        6:  153:			sprintf(str, "Expected: %d, Found: %d. Passed.\n", expected, found);
+        6:  154:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  155:		}
+        -:  156:		else
+        -:  157:		{
+    #####:  158:			sprintf(str, "Expected: %d, Found: %d. Failed!!!!!\n", expected, found);
+    #####:  159:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  160:		}
+        -:  161:	}
+        -:  162:
+        -:  163:	//checking function result
+        6:  164:	if (found != expected && exitAfterFunctionFail == 1)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+branch  2 never executed
+branch  3 never executed
+        -:  165:	{
+    #####:  166:		overallTestPass = 0;
+    #####:  167:		return overallTestPass; //break out of function early
+        -:  168:	}
+        -:  169:
+        -:  170:	//reset check
+        6:  171:	passesCheck = 1;
+        -:  172:
+        -:  173:	//output status to screen and file
+        6:  174:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  175:	{
+        6:  176:		sprintf(str, "\tChecking manually if game is over and comparing against function...");
+        6:  177:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  178:	}
+        -:  179:
+        6:  180:	int gameOverVal = 0;
+        6:  181:	int supplyPilesEmpty = 0;
+       66:  182:	for (i = 0; i < kingdomCardsSize; i++)
+branch  0 taken 91%
+branch  1 taken 9% (fallthrough)
+        -:  183:	{
+       60:  184:		if (tempG.supplyCount[kingdomCards[i]] <= 0)
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+        -:  185:		{
+       15:  186:			supplyPilesEmpty++;
+        -:  187:		}
+        -:  188:	}
+        -:  189:
+        6:  190:	if (tempG.supplyCount[province] <= 0 || supplyPilesEmpty >= 3)
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 25% (fallthrough)
+branch  3 taken 75%
+        -:  191:	{
+        3:  192:		gameOverVal = 1;
+        -:  193:	}
+        -:  194:
+        6:  195:	if (gameOverVal != found)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  196:	{
+    #####:  197:		passesCheck = overallTestPass = 0;
+        -:  198:	}
+        -:  199:
+        -:  200:	//output status to screen and file
+        6:  201:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  202:	{
+        6:  203:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  204:		{
+        6:  205:			sprintf(str, "Passed.\n");
+        6:  206:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  207:		}
+        -:  208:		else
+        -:  209:		{
+    #####:  210:			sprintf(str, "Failed!!!!!\n");
+    #####:  211:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  212:		}
+        -:  213:	}
+        -:  214:
+        -:  215:
+        -:  216:	//reset check
+        6:  217:	passesCheck = 1;
+        -:  218:
+        -:  219:	//output status to screen and file
+        6:  220:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  221:	{
+        6:  222:		sprintf(str, "\tChecking player's coins weren't modified...");
+        6:  223:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  224:	}
+        -:  225:
+        6:  226:	if (tempG.coins != G->coins)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  227:	{
+    #####:  228:		passesCheck = overallTestPass = 0;
+        -:  229:	}
+        -:  230:
+        -:  231:	//output status to screen and file
+        6:  232:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  233:	{
+        6:  234:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  235:		{
+        6:  236:			sprintf(str, "Passed.\n");
+        6:  237:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  238:		}
+        -:  239:		else
+        -:  240:		{
+    #####:  241:			sprintf(str, "Failed!!!!!\n");
+    #####:  242:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  243:		}
+        -:  244:	}
+        -:  245:
+        -:  246:
+        -:  247:	//reset check
+        6:  248:	passesCheck = 1;
+        -:  249:
+        -:  250:	//output status to screen and file
+        6:  251:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  252:	{
+        6:  253:		sprintf(str, "\tChecking ALL player's hands, decks, and discards weren't changed...");
+        6:  254:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  255:	}
+        -:  256:
+        -:  257:	//verify all player's hands, decks, discard piles are identical to original values before function execution
+       30:  258:	for (i = 0; i < tempG.numPlayers; i++)
+branch  0 taken 80%
+branch  1 taken 20% (fallthrough)
+        -:  259:	{
+        -:  260:		//jump out of loop if something fails
+       24:  261:		if (!passesCheck) break;
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  262:
+        -:  263:		//make sure hand counts are the same
+       24:  264:		if (tempG.handCount[i] == G->handCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  265:		{
+        -:  266:			//check player's hand for changes
+       54:  267:			for (j = 0; j < tempG.handCount[i]; j++)
+branch  0 taken 56%
+branch  1 taken 44% (fallthrough)
+        -:  268:			{
+        -:  269:				//if the hand cards aren't the same
+       30:  270:				if (tempG.hand[i][j] != G->hand[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  271:				{
+        -:  272:					//fails check...
+    #####:  273:					passesCheck = overallTestPass = 0;
+    #####:  274:					break;
+        -:  275:				}
+        -:  276:			}
+        -:  277:		}
+        -:  278:		else
+        -:  279:		{
+        -:  280:			//original hand and new hand aren't the same count
+    #####:  281:			passesCheck = overallTestPass = 0;
+    #####:  282:			break;
+        -:  283:		}
+        -:  284:
+        -:  285:		//make sure deck counts are the same
+       24:  286:		if (tempG.deckCount[i] == G->deckCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  287:		{
+        -:  288:			//iterate through cards and make sure identical
+      234:  289:			for (j = 0; j < tempG.deckCount[i]; j++)
+branch  0 taken 90%
+branch  1 taken 10% (fallthrough)
+        -:  290:			{
+        -:  291:				//check if cards are the same
+      210:  292:				if (tempG.deck[i][j] != G->deck[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  293:				{
+        -:  294:					//fails check...
+    #####:  295:					passesCheck = overallTestPass = 0;
+    #####:  296:					break;
+        -:  297:				}
+        -:  298:			}
+        -:  299:		}
+        -:  300:		else
+        -:  301:		{
+        -:  302:			//original deck count doesn't match new deck count
+    #####:  303:			passesCheck = 0;
+    #####:  304:			break;
+        -:  305:		}
+        -:  306:
+        -:  307:		//check discard piles are the same
+       24:  308:		if (tempG.discardCount[i] == G->discardCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  309:		{
+        -:  310:			//iterate through discard piles and check for identical
+       24:  311:			if (tempG.discard[i][j] != G->discard[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  312:			{
+        -:  313:				//fails check....
+    #####:  314:				passesCheck = overallTestPass = 0;
+    #####:  315:				break;
+        -:  316:			}
+        -:  317:		}
+        -:  318:		else
+        -:  319:		{
+        -:  320:			//original discard pile doesn't match new one
+    #####:  321:			passesCheck = overallTestPass = 0;
+    #####:  322:			break;
+        -:  323:		}
+        -:  324:
+        -:  325:	}
+        -:  326:
+        -:  327:	//output status to screen and file
+        6:  328:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  329:	{
+        6:  330:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  331:		{
+        6:  332:			sprintf(str, "Passed.\n");
+        6:  333:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  334:		}
+        -:  335:		else
+        -:  336:		{
+    #####:  337:			sprintf(str, "Failed!!!!!\n");
+    #####:  338:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  339:		}
+        -:  340:	}
+        -:  341:
+        -:  342:	//reset check
+        6:  343:	passesCheck = 1;
+        -:  344:
+        -:  345:	//output status to screen and file
+        6:  346:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  347:	{
+        6:  348:		sprintf(str, "\tChecking current player's turn hasn't changed...");
+        6:  349:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  350:	}
+        -:  351:
+        -:  352:	//also check that player's turn hasn't changed 
+        6:  353:	if (tempG.whoseTurn != G->whoseTurn)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  354:	{
+        -:  355:		//function modified turn inside card effect (shouldn't happen)
+    #####:  356:		passesCheck = overallTestPass = 0;
+        -:  357:	}
+        -:  358:
+        -:  359:	//output status to screen and file
+        6:  360:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  361:	{
+        6:  362:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  363:		{
+        6:  364:			sprintf(str, "Passed.\n");
+        6:  365:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  366:		}
+        -:  367:		else
+        -:  368:		{
+    #####:  369:			sprintf(str, "Failed!!!!!\n");
+    #####:  370:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  371:		}
+        -:  372:	}
+        -:  373:
+        6:  374:	free(str);
+        -:  375:
+        6:  376:	return overallTestPass;
+        -:  377:}
+        -:  378:
+        -:  379:/*
+        -:  380:	void testIsGameOverFunction()
+        -:  381:	Parameters:
+        -:  382:		None.
+        -:  383:	Returns:
+        -:  384:		None.
+        -:  385:	Description:
+        -:  386:		This function will perform several tests of the isGameOver function
+        -:  387:		by calling the test harness function above. Test results will be
+        -:  388:		both output to screen and to a text file.
+        -:  389:*/
+function testIsGameOverFunction called 1 returned 100% blocks executed 85%
+        1:  390:void testIsGameOverFunction()
+        -:  391:{
+        -:  392:	//create two gameState objects
+        -:  393:	struct gameState G, backupG;
+        -:  394:
+        -:  395:	//set the initial player count to 4
+        1:  396:	int playerCount = 4;
+        -:  397:
+        -:  398:	//variable to keep track of test number
+        1:  399:	int testnum = 1;
+        -:  400:
+        -:  401:	//initial supply cards
+        1:  402:	int k[10] = { adventurer, embargo, village, minion, mine, cutpurse,
+        -:  403:		sea_hag, remodel, smithy, council_room };
+        -:  404:
+        -:  405:	//random seed
+        1:  406:	int randomSeed = 1;
+        -:  407:
+        1:  408:	int i = 0;
+        -:  409:
+        -:  410:	//initialize the gameState object
+        1:  411:	int res = initializeGame(playerCount, k, randomSeed, &G);
+call    0 returned 100%
+        -:  412:	//this should always pass, if it doesn't we need to exit
+        1:  413:	assert(res == 0);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+        -:  414:
+        -:  415:	//initialze a string of all '\0' chars
+        1:  416:	char *str = malloc(sizeof(char) * MAX_STRING_SIZE);
+        1:  417:	memset(str, '\0', sizeof(char) * MAX_STRING_SIZE);
+        -:  418:
+        -:  419:	//create a file pointer to output file
+        1:  420:	FILE *outputFile = fopen("unittest4.out", "w");
+call    0 returned 100%
+        -:  421:
+        -:  422:	//output current test information
+        1:  423:	sprintf(str, "Test %d: testing isGameOver function on newly initialized game (game not over).\n", testnum++);
+        1:  424:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  425:
+        -:  426:	//make copy of gamestate for testing
+        1:  427:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  428:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 0, 1);
+call    0 returned 100%
+        -:  429:
+        -:  430:	//check the result and output status
+        1:  431:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  432:	{
+        1:  433:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  434:	}
+        -:  435:	else
+        -:  436:	{
+    #####:  437:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  438:	}
+        1:  439:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  440:
+        -:  441:
+        -:  442:
+        -:  443:	//output current test information
+        1:  444:	sprintf(str, "Test %d: testing isGameOver function with all supply counts set to 1 card (game not over).\n", testnum++);
+        1:  445:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  446:
+        -:  447:	//make copy of gamestate for testing
+        1:  448:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  449:	for (i = 0; i < treasure_map + 1; i++) backupG.supplyCount[i] = 1;
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+        1:  450:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 0, 1);
+call    0 returned 100%
+        -:  451:
+        -:  452:	//check the result and output status
+        1:  453:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  454:	{
+        1:  455:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  456:	}
+        -:  457:	else
+        -:  458:	{
+    #####:  459:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  460:	}
+        1:  461:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  462:
+        -:  463:	//output current test information
+        1:  464:	sprintf(str, "Test %d: testing isGameOver function with two supply counts set to 0 (game not over).\n", testnum++);
+        1:  465:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  466:
+        -:  467:	//make copy of gamestate for testing
+        1:  468:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  469:	backupG.supplyCount[k[0]] = backupG.supplyCount[k[1]] = 0;
+        1:  470:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 0, 1);
+call    0 returned 100%
+        -:  471:
+        -:  472:	//check the result and output status
+        1:  473:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  474:	{
+        1:  475:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  476:	}
+        -:  477:	else
+        -:  478:	{
+    #####:  479:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  480:	}
+        1:  481:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  482:
+        -:  483:	//output current test information
+        1:  484:	sprintf(str, "Test %d: testing isGameOver function with three supply counts set to 0 (game is over).\n", testnum++);
+        1:  485:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  486:
+        -:  487:	//make copy of gamestate for testing
+        1:  488:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  489:	backupG.supplyCount[k[0]] = backupG.supplyCount[k[1]] = backupG.supplyCount[k[2]] = 0;
+        1:  490:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 1, 1);
+call    0 returned 100%
+        -:  491:
+        -:  492:	//check the result and output status
+        1:  493:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  494:	{
+        1:  495:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  496:	}
+        -:  497:	else
+        -:  498:	{
+    #####:  499:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  500:	}
+        1:  501:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  502:
+        1:  503:	sprintf(str, "Test %d: testing isGameOver function with full supply but no province cards left (game is over).\n", testnum++);
+        1:  504:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  505:
+        -:  506:	//make copy of gamestate for testing
+        1:  507:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  508:	backupG.supplyCount[province] = 0;
+        1:  509:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 1, 1);
+call    0 returned 100%
+        -:  510:
+        -:  511:	//check the result and output status
+        1:  512:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  513:	{
+        1:  514:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  515:	}
+        -:  516:	else
+        -:  517:	{
+    #####:  518:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  519:	}
+        1:  520:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  521:
+        1:  522:	sprintf(str, "Test %d: testing isGameOver function with all supply counts set to zero (game is over).\n", testnum++);
+        1:  523:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  524:
+        -:  525:	//make copy of gamestate for testing
+        1:  526:	memcpy(&backupG, &G, sizeof(struct gameState));
+        1:  527:	for(i = 0; i < treasure_map + 1; i++) backupG.supplyCount[i] = 0;
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+        1:  528:	res = validateIsGameOverFunction(k, 10, &backupG, 1, outputFile, 1, 1);
+call    0 returned 100%
+        -:  529:
+        -:  530:	//check the result and output status
+        1:  531:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  532:	{
+        1:  533:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  534:	}
+        -:  535:	else
+        -:  536:	{
+    #####:  537:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  538:	}
+        1:  539:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  540:
+        -:  541:
+        -:  542:	//close the output file
+        1:  543:	fclose(outputFile);
+call    0 returned 100%
+        -:  544:
+        -:  545:	//free dynamic memory
+        1:  546:	free(str);
+        1:  547:}
+        -:  548:
+        -:  549:/*
+        -:  550:	int main()
+        -:  551:	Parameters:
+        -:  552:		None.
+        -:  553:	Returns:
+        -:  554:		int 0
+        -:  555:	Description:
+        -:  556:		main launching point for the program.
+        -:  557:*/
+function main called 1 returned 100% blocks executed 100%
+        1:  558:int main()
+        -:  559:{
+        1:  560:	testIsGameOverFunction();
+call    0 returned 100%
+        1:  561:	return 0;
+        -:  562:}

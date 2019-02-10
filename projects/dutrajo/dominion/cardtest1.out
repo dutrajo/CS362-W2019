@@ -1,0 +1,41 @@
+Test 1: Playing Card 'steward' opting to gain two cards.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....gain two cards.
+	Checking if handCount increased correctly...Passed.
+	Verifying cards received are valid cards...Passed.
+	Verifying first card came from player's deck...Passed.
+	Verifying second card came from player's deck...Passed.
+	Checking player's coins didn't change...Passed.
+	Checking played card was removed from player's hand...Passed.
+	Checking original cards in hand didn't change (except played card missing)...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'steward' opting to gain two coins.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....gain two coins.
+	Checking player gained two coins...Passed.
+	Checking played card was removed from player's hand...Passed.
+	Checking original cards in hand didn't change (except played card missing)...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'steward' opting to trash two cards.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....trash two cards.
+	Checking correct count of cards missing from player's hand...Passed.
+	Checking correct card values are missing from player's hand...Failed!!!!!
+	Checking cards in hand didn't change (except played card, and trashed missing)...Failed!!!!!
+	Checking trashed cards didn't end up in discard deck...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+

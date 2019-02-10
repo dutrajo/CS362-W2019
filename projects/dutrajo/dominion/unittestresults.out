@@ -1,0 +1,547 @@
+Running unittest1....
+Test 1: testing shuffle on newly initialized game.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing shuffle on ascending sorted deck.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing shuffle on descending sorted deck.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing shuffle on a full deck (500 cards).
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's deck cards were re-ordered...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing shuffle on a deck with a single card.
+	Running function Shuffle()....Expected: 0, Found: 0. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing shuffle on a deck with zero cards.
+	Running function Shuffle()....Expected: -1, Found: -1. Passed.
+	Checking player deck count hasn't changed...Passed.
+	Checking player's deck cards haven't changed, just the order...Passed.
+	Checking player's hand cards weren't shuffled or modified...Passed.
+	Checking player's discard cards weren't shuffled or modified...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing randomness of shuffle function using two cards in deck.
+Found randomness of shuffle with 2 cards created a 50.05 : 49.95 distribution using 1000000 tests.
+------------- OVERALL TEST PASSED ---------------
+
+File 'unittest1.c'
+Lines executed:84.86% of 383
+Branches executed:96.00% of 200
+Taken at least once:59.00% of 200
+Calls executed:81.67% of 60
+Creating 'unittest1.c.gcov'
+
+ 
+Running unittest2...
+Test 1: testing updateCoins function with zero coins in hand, and no bonus.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing updateCoins function with zero coins in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 1, Found: 1. Passed.
+	Checking coins calculated correctly...Expected: 1, Found: 1. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing updateCoins function with 1 copper + 1 silver in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 4, Found: 4. Passed.
+	Checking coins calculated correctly...Expected: 4, Found: 4. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing updateCoins function with 1 copper + 1 silver + 1 gold in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 7, Found: 7. Passed.
+	Checking coins calculated correctly...Expected: 7, Found: 7. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing updateCoins function with 500 copper in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 500, Found: 500. Passed.
+	Checking coins calculated correctly...Expected: 500, Found: 500. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing updateCoins function with 500 silver in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 1000, Found: 1000. Passed.
+	Checking coins calculated correctly...Expected: 1000, Found: 1000. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing updateCoins function with 500 gold in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 1500, Found: 1500. Passed.
+	Checking coins calculated correctly...Expected: 1500, Found: 1500. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 8: testing updateCoins function with 1 copper in player's hand, and -1 bonus.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 9: testing updateCoins function with 0 card's in player's hand.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+File 'unittest2.c'
+Lines executed:89.85% of 335
+Branches executed:97.87% of 94
+Taken at least once:59.57% of 94
+Calls executed:88.00% of 50
+Creating 'unittest2.c.gcov'
+
+ 
+Running unittest3...
+Test 1: testing fullDeckCount, looking for copper, with zero in any of player's decks.
+	Running function fullDeckCount()....Expected: 0, Found: 0. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing fullDeckCount, looking for copper, with only 1 in player's hand.
+	Running function fullDeckCount()....Expected: 1, Found: 1. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing fullDeckCount, looking for copper, with 1 in player's hand, and 1 in deck.
+	Running function fullDeckCount()....Expected: 2, Found: 2. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing fullDeckCount, looking for copper, with 1 in player's hand, 1 in deck, and 1 in discard.
+	Running function fullDeckCount()....Expected: 3, Found: 3. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing fullDeckCount, looking for copper, with MAX_HAND (500) in player's hand.
+	Running function fullDeckCount()....Expected: 500, Found: 500. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing fullDeckCount, looking for estate, with 500 in player's hand, and 500 in deck.
+	Running function fullDeckCount()....Expected: 1000, Found: 1000. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing fullDeckCount, looking for adventurer, with 500 in player's hand, 500 in deck, and 500 in discard.
+	Running function fullDeckCount()....Expected: 1500, Found: 1500. Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+File 'unittest3.c'
+Lines executed:86.72% of 241
+Branches executed:97.83% of 92
+Taken at least once:61.96% of 92
+Calls executed:88.37% of 43
+Creating 'unittest3.c.gcov'
+
+ 
+Running unittest4...
+Test 1: testing isGameOver function on newly initialized game (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing isGameOver function with all supply counts set to 1 card (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing isGameOver function with two supply counts set to 0 (game not over).
+	Running function isGameOver()....Expected: 0, Found: 0. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing isGameOver function with three supply counts set to 0 (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing isGameOver function with full supply but no province cards left (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing isGameOver function with all supply counts set to zero (game is over).
+	Running function isGameOver()....Expected: 1, Found: 1. Passed.
+	Checking manually if game is over and comparing against function...Passed.
+	Checking player's coins weren't modified...Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+File 'unittest4.c'
+Lines executed:81.42% of 183
+Branches executed:97.83% of 92
+Taken at least once:58.70% of 92
+Calls executed:86.05% of 43
+Creating 'unittest4.c.gcov'
+
+ 
+Running cardtest1...
+Test 1: Playing Card 'steward' opting to gain two cards.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....gain two cards.
+	Checking if handCount increased correctly...Passed.
+	Verifying cards received are valid cards...Passed.
+	Verifying first card came from player's deck...Passed.
+	Verifying second card came from player's deck...Passed.
+	Checking player's coins didn't change...Passed.
+	Checking played card was removed from player's hand...Passed.
+	Checking original cards in hand didn't change (except played card missing)...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'steward' opting to gain two coins.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....gain two coins.
+	Checking player gained two coins...Passed.
+	Checking played card was removed from player's hand...Passed.
+	Checking original cards in hand didn't change (except played card missing)...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'steward' opting to trash two cards.
+	Running cardEffect For Steward....Expected 0, function returned 0. Passed.
+	Determining Users Selected Action....trash two cards.
+	Checking correct count of cards missing from player's hand...Passed.
+	Checking correct card values are missing from player's hand...Failed!!!!!
+	Checking cards in hand didn't change (except played card, and trashed missing)...Failed!!!!!
+	Checking trashed cards didn't end up in discard deck...Passed.
+	Checking played card ended up in discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't modified incorrectly..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+File 'cardtest1.c'
+Lines executed:78.83% of 444
+Branches executed:91.95% of 298
+Taken at least once:55.37% of 298
+Calls executed:75.31% of 81
+Creating 'cardtest1.c.gcov'
+
+ 
+Running cardtest2...
+Test 1: Playing Card 'remodel', trashing a 'cutpurse' and gaining an 'adventurer' (should pass).
+	Running cardEffect For Remodel....Expected: 0, function returned: 0. Passed.
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (4 + 2 >= 6)...Passed.
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Passed.
+	Checking purchased card came from supply...Passed.
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'remodel', trashing a 'cutpurse' and gaining a 'copper' (should pass).
+	Running cardEffect For Remodel....Expected: 0, function returned: -1. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (4 + 2 >= 0)...Passed.
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Failed!!!!!
+	Checking purchased card came from supply...Failed!!!!!
+	Checking card to trash isn't in player's hand...Failed!!!!!
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'remodel', trashing a 'copper' and gaining an 'adventurer' (should fail).
+	Running cardEffect For Remodel....Expected: -1, function returned: 0. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (0 + 2 >= 6)...Failed!!!!!
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Passed.
+	Checking purchased card came from supply...Passed.
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'remodel', trashing a 'copper' and gaining an 'adventurer' when supply is empty (should fail).
+	Running cardEffect For Remodel....Expected: -1, function returned: 0. Failed!!!
+	Checking trashed card isn't remodel card played...Passed.
+	Checking purchased card is within purchase price (0 + 2 >= 6)...Failed!!!!!
+	Checking purchased card didn't go into player's hand...Passed.
+	Checking purchased card didn't go into player's deck...Passed.
+	Checking purchased card went into player's discard pile...Failed!!!!!
+	Checking purchased card came from supply...Failed!!!!!
+	Checking card to trash isn't in player's hand...Passed.
+	Checking card to trash isn't in player's deck...Passed.
+	Checking card to trash didn't end up in supply..Passed.
+	Checking card to trash isn't in player's discard pile...Passed.
+	Checking card played went into discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+File 'cardtest2.c'
+Lines executed:84.12% of 340
+Branches executed:93.27% of 208
+Taken at least once:55.77% of 208
+Calls executed:84.06% of 69
+Creating 'cardtest2.c.gcov'
+
+ 
+Running cardtest3...
+Test 1: Playing Card 'smithy' when player's deck is full (MAX_DECK: 500).
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'smithy' when deck has exactly 4 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'smithy' when deck has exactly 3 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'smithy' when deck has exactly 0 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Failed!!!!!
+	Checking player's hand actually received 3 cards...Failed!!!!!
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Failed!!!!!
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+File 'cardtest3.c'
+Lines executed:84.80% of 296
+Branches executed:92.94% of 170
+Taken at least once:58.24% of 170
+Calls executed:84.62% of 52
+Creating 'cardtest3.c.gcov'
+
+ 
+Running cardtest4...
+Test 1: Playing Card 'adventurer' when deck has MAX_DECK (500) treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 3. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 3. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'adventurer' when deck has exactly 3 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 3. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 3. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'adventurer' when deck has exactly 2 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expceted: 2, Found; 2. Passed.
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 2. Passed.
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'adventurer' when deck has exactly 1 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 1. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 1. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 5: Playing Card 'adventurer' when deck has exactly 0 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: -2. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 0. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Failed!!!!!
+	Checking played card was removed from hand...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 6: Playing Card 'adventurer' when deck has zero cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: -2. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 0. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Failed!!!!!
+	Checking played card was removed from hand...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+File 'cardtest4.c'
+Lines executed:89.81% of 373
+Branches executed:96.59% of 176
+Taken at least once:64.77% of 176
+Calls executed:89.83% of 59
+Creating 'cardtest4.c.gcov'
+

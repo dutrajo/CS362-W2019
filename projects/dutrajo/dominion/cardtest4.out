@@ -1,0 +1,78 @@
+Test 1: Playing Card 'adventurer' when deck has MAX_DECK (500) treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 3. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 3. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'adventurer' when deck has exactly 3 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 3. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 3. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'adventurer' when deck has exactly 2 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expceted: 2, Found; 2. Passed.
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 2. Passed.
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'adventurer' when deck has exactly 1 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: 1. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 1. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Passed.
+	Checking played card was removed from hand...Failed!!!!!
+	Checking played card was moved to discard pile...Failed!!!!!
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 5: Playing Card 'adventurer' when deck has exactly 0 treasure cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: -2. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 0. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Failed!!!!!
+	Checking played card was removed from hand...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 6: Playing Card 'adventurer' when deck has zero cards in it.
+	Running cardEffect For Adventurer....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased...Expected: 2, Found: -2. Failed!!!!!
+	Checking player's hand received 2 treasure cards...Expected: 2, Found: 0. Failed!!!!!
+	Checking that original hand cards weren't modified unexpectedly...Failed!!!!!
+	Checking played card was removed from hand...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+

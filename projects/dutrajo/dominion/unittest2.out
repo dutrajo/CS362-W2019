@@ -1,0 +1,63 @@
+Test 1: testing updateCoins function with zero coins in hand, and no bonus.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: testing updateCoins function with zero coins in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 1, Found: 1. Passed.
+	Checking coins calculated correctly...Expected: 1, Found: 1. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: testing updateCoins function with 1 copper + 1 silver in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 4, Found: 4. Passed.
+	Checking coins calculated correctly...Expected: 4, Found: 4. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: testing updateCoins function with 1 copper + 1 silver + 1 gold in hand, and 1 bonus.
+	Running function updateCoins()....Expected: 7, Found: 7. Passed.
+	Checking coins calculated correctly...Expected: 7, Found: 7. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: testing updateCoins function with 500 copper in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 500, Found: 500. Passed.
+	Checking coins calculated correctly...Expected: 500, Found: 500. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: testing updateCoins function with 500 silver in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 1000, Found: 1000. Passed.
+	Checking coins calculated correctly...Expected: 1000, Found: 1000. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: testing updateCoins function with 500 gold in player's hand, and 0 bonus.
+	Running function updateCoins()....Expected: 1500, Found: 1500. Passed.
+	Checking coins calculated correctly...Expected: 1500, Found: 1500. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 8: testing updateCoins function with 1 copper in player's hand, and -1 bonus.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 9: testing updateCoins function with 0 card's in player's hand.
+	Running function updateCoins()....Expected: 0, Found: 0. Passed.
+	Checking coins calculated correctly...Expected: 0, Found: 0. Passed.
+	Checking ALL player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+------------- OVERALL TEST PASSED ---------------
+

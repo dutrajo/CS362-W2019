@@ -1,0 +1,826 @@
+        -:    0:Source:unittest3.c
+        -:    0:Graph:unittest3.gcno
+        -:    0:Data:unittest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include "rngs.h"
+        -:    4:#include <stdio.h>
+        -:    5:#include <stdlib.h>
+        -:    6:#include <assert.h>
+        -:    7:#include <string.h>
+        -:    8:#include <unistd.h>
+        -:    9:
+        -:   10://set array size for output strings
+        -:   11:#define MAX_STRING_SIZE 10000
+        -:   12:
+        -:   13:
+        -:   14:/*
+        -:   15:	void initializeString(
+        -:   16:			char* str,
+        -:   17:			int size
+        -:   18:			)
+        -:   19:	Parameters:
+        -:   20:		char* str: char* array to initialize
+        -:   21:		int size: size of char* array
+        -:   22:	Returns:
+        -:   23:		Nothing
+        -:   24:	Description:
+        -:   25:		Will set all of the char array to '\0' characters
+        -:   26:		to ensure a proper formatted string.
+        -:   27:*/
+function initializeString called 77 returned 100% blocks executed 100%
+       77:   28:void initializeString(char *str, int size)
+        -:   29:{
+        -:   30:	//validate pointer isn't null
+       77:   31:	if (str != NULL)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:   32:	{
+        -:   33:		//initialize array to all '\0' characters
+       77:   34:		memset(str, '\0', sizeof(char) * size);
+        -:   35:	}
+       77:   36:}
+        -:   37:
+        -:   38:/*
+        -:   39:	void customPrintf(
+        -:   40:			char* line,
+        -:   41:			FILE* outputFile
+        -:   42:			)
+        -:   43:	Parameters:
+        -:   44:		char* line: string to output,
+        -:   45:		FILE* outputFile: file pointer to output file (can be null)
+        -:   46:	Returns:
+        -:   47:		Nothing
+        -:   48:	Description:
+        -:   49:		Will output a string (ends with '\0') to the console as well
+        -:   50:		as to the output file if the pointer isn't null.
+        -:   51:*/
+function customPrintf called 70 returned 100% blocks executed 100%
+       70:   52:void customPrintf(char* line, FILE* outputFile)
+        -:   53:{
+        -:   54:	//output the line to the console
+       70:   55:	printf("%s", line);
+call    0 returned 100%
+        -:   56:
+        -:   57:	//check if the file pointer is null
+       70:   58:	if (outputFile != NULL)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:   59:	{
+        -:   60:		//not null, so output to file
+       70:   61:		fprintf(outputFile, "%s", line);
+call    0 returned 100%
+        -:   62:	}
+        -:   63:
+        -:   64:	//re-initialize string 
+       70:   65:	initializeString(line, MAX_STRING_SIZE);
+call    0 returned 100%
+       70:   66:}
+        -:   67:
+        -:   68:/*
+        -:   69:	int validateFullDeckCountFunction(
+        -:   70:		int playerIndex,
+        -:   71:		int cardToFind,
+        -:   72:		struct gameState *G,
+        -:   73:		int detailedOutput,
+        -:   74:		FILE* outputFile,
+        -:   75:		int expectedPassOrFail,
+        -:   76:		int exitAfterFunctionFail
+        -:   77:		)
+        -:   78:	Parameters:
+        -:   79:		int playerIndex: index of player whose turn it is
+        -:   80:		int cardToFind: card value to find in decks
+        -:   81:		struct gameState *G: gameState to use
+        -:   82:		int detailedOutput: indicate if detailed output is needed
+        -:   83:		FILE* outputFile: file to output results to (can be null)
+        -:   84:		int expectedPassOrFail: what we expect the initial function call to return
+        -:   85:		int exitAfterFunctionFail: if we should stop test if we don't get expected output
+        -:   86:	Returns:
+        -:   87:		int, 0 if fail, 1 if succes
+        -:   88:	Description:
+        -:   89:		This function can be used to perform a single test on a valid gameState object
+        -:   90:		using the fullDeckCount function. It will find how many of a specified card
+        -:   91:		exists in the player's hand, deck, and discard pile. This function will validate
+        -:   92:		the function by performed tests and checks.
+        -:   93:*/
+function validateFullDeckCountFunction called 7 returned 100% blocks executed 75%
+        7:   94:int validateFullDeckCountFunction(
+        -:   95:	int playerIndex,
+        -:   96:	int cardToFind,
+        -:   97:	struct gameState *G,
+        -:   98:	int detailedOutput,//0 = no output, 1 = output
+        -:   99:	FILE* outputFile,
+        -:  100:	int expectedPassOrFail, //0 = expect fail, 1 = expect pass
+        -:  101:	int exitAfterFunctionFail //1 = exit test if function != expected
+        -:  102:)
+        -:  103:{
+        -:  104:	//gameState object to use
+        -:  105:	struct gameState tempG;
+        -:  106:
+        -:  107:	//create dynamic memory for output string
+        7:  108:	char *str = malloc(sizeof(char) * MAX_STRING_SIZE);
+        -:  109:
+        -:  110:	//initialize the string
+        7:  111:	initializeString(str, MAX_STRING_SIZE);
+call    0 returned 100%
+        -:  112:
+        -:  113:	//first copy gameState to test object
+        7:  114:	memcpy(&tempG, G, sizeof(struct gameState));
+        -:  115:
+        -:  116:	//indicator for individual test pass
+        7:  117:	int passesCheck = 1;
+        -:  118:
+        -:  119:	//indiciator for all test pass
+        7:  120:	int overallTestPass = 1;
+        -:  121:
+        -:  122:	//counter variable
+        7:  123:	int i = 0;
+        7:  124:	int j = 0;
+        -:  125:
+        -:  126:	//results stuff
+        7:  127:	int expected = 0;
+        7:  128:	int found = 0;
+        -:  129:
+        -:  130:	//set check
+        7:  131:	passesCheck = 1;
+        -:  132:
+        -:  133:	//execute the card effect
+        7:  134:	sprintf(str, "\tRunning function fullDeckCount()....");
+        7:  135:	if (detailedOutput) customPrintf(str, outputFile);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+call    2 returned 100%
+        -:  136:
+        7:  137:	found = fullDeckCount(playerIndex, cardToFind, &tempG);
+call    0 returned 100%
+        7:  138:	expected = expectedPassOrFail;
+        -:  139:
+        7:  140:	if (found != expected)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  141:	{
+    #####:  142:		passesCheck = overallTestPass = 0;
+        -:  143:	}
+        -:  144:
+        -:  145:	//output status to screen and file
+        7:  146:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  147:	{
+        7:  148:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  149:		{
+        7:  150:			sprintf(str, "Expected: %d, Found: %d. Passed.\n", expected, found);
+        7:  151:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  152:		}
+        -:  153:		else
+        -:  154:		{
+    #####:  155:			sprintf(str, "Expected: %d, Found: %d. Failed!!!!!\n", expected, found);
+    #####:  156:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  157:		}
+        -:  158:	}
+        -:  159:
+        -:  160:	//checking function result
+        7:  161:	if (found != expected && exitAfterFunctionFail == 1)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+branch  2 never executed
+branch  3 never executed
+        -:  162:	{
+    #####:  163:		overallTestPass = 0;
+    #####:  164:		return overallTestPass; //break out of function early
+        -:  165:	}
+        -:  166:
+        -:  167:
+        -:  168:	//reset check
+        7:  169:	passesCheck = 1;
+        -:  170:
+        -:  171:	//output status to screen and file
+        7:  172:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  173:	{
+        7:  174:		sprintf(str, "\tChecking player's coins weren't modified...");
+        7:  175:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  176:	}
+        -:  177:
+        7:  178:	if (tempG.coins != G->coins)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  179:	{
+    #####:  180:		passesCheck = overallTestPass = 0;
+        -:  181:	}
+        -:  182:
+        -:  183:	//output status to screen and file
+        7:  184:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  185:	{
+        7:  186:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  187:		{
+        7:  188:			sprintf(str, "Passed.\n");
+        7:  189:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  190:		}
+        -:  191:		else
+        -:  192:		{
+    #####:  193:			sprintf(str, "Failed!!!!!\n");
+    #####:  194:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  195:		}
+        -:  196:	}
+        -:  197:
+        -:  198:
+        -:  199:	//reset check
+        7:  200:	passesCheck = 1;
+        -:  201:
+        -:  202:	//output status to screen and file
+        7:  203:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  204:	{
+        7:  205:		sprintf(str, "\tChecking ALL player's hands, decks, and discards weren't changed...");
+        7:  206:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  207:	}
+        -:  208:
+        -:  209:	//verify all player's hands, decks, discard piles are identical to original values before function execution
+       35:  210:	for (i = 0; i < tempG.numPlayers; i++)
+branch  0 taken 80%
+branch  1 taken 20% (fallthrough)
+        -:  211:	{
+        -:  212:		//jump out of loop if something fails
+       28:  213:		if (!passesCheck) break;
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  214:
+        -:  215:		//make sure hand counts are the same
+       28:  216:		if (tempG.handCount[i] == G->handCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  217:		{
+        -:  218:			//check player's hand for changes
+     1548:  219:			for (j = 0; j < tempG.handCount[i]; j++)
+branch  0 taken 98%
+branch  1 taken 2% (fallthrough)
+        -:  220:			{
+        -:  221:				//if the hand cards aren't the same
+     1520:  222:				if (tempG.hand[i][j] != G->hand[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  223:				{
+        -:  224:					//fails check...
+    #####:  225:					passesCheck = overallTestPass = 0;
+    #####:  226:					break;
+        -:  227:				}
+        -:  228:			}
+        -:  229:		}
+        -:  230:		else
+        -:  231:		{
+        -:  232:			//original hand and new hand aren't the same count
+    #####:  233:			passesCheck = overallTestPass = 0;
+    #####:  234:			break;
+        -:  235:		}
+        -:  236:
+        -:  237:		//make sure deck counts are the same
+       28:  238:		if (tempG.deckCount[i] == G->deckCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  239:		{
+        -:  240:			//iterate through cards and make sure identical
+     1750:  241:			for (j = 0; j < tempG.deckCount[i]; j++)
+branch  0 taken 98%
+branch  1 taken 2% (fallthrough)
+        -:  242:			{
+        -:  243:				//check if cards are the same
+     1722:  244:				if (tempG.deck[i][j] != G->deck[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  245:				{
+        -:  246:					//fails check...
+    #####:  247:					passesCheck = overallTestPass = 0;
+    #####:  248:					break;
+        -:  249:				}
+        -:  250:			}
+        -:  251:		}
+        -:  252:		else
+        -:  253:		{
+        -:  254:			//original deck count doesn't match new deck count
+    #####:  255:			passesCheck = 0;
+    #####:  256:			break;
+        -:  257:		}
+        -:  258:
+        -:  259:		//check discard piles are the same
+       28:  260:		if (tempG.discardCount[i] == G->discardCount[i])
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  261:		{
+        -:  262:			//iterate through discard piles and check for identical
+       28:  263:			if (tempG.discard[i][j] != G->discard[i][j])
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  264:			{
+        -:  265:				//fails check....
+    #####:  266:				passesCheck = overallTestPass = 0;
+    #####:  267:				break;
+        -:  268:			}
+        -:  269:		}
+        -:  270:		else
+        -:  271:		{
+        -:  272:			//original discard pile doesn't match new one
+    #####:  273:			passesCheck = overallTestPass = 0;
+    #####:  274:			break;
+        -:  275:		}
+        -:  276:
+        -:  277:	}
+        -:  278:
+        -:  279:	//output status to screen and file
+        7:  280:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  281:	{
+        7:  282:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  283:		{
+        7:  284:			sprintf(str, "Passed.\n");
+        7:  285:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  286:		}
+        -:  287:		else
+        -:  288:		{
+    #####:  289:			sprintf(str, "Failed!!!!!\n");
+    #####:  290:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  291:		}
+        -:  292:	}
+        -:  293:
+        -:  294:	//reset check
+        7:  295:	passesCheck = 1;
+        -:  296:
+        -:  297:	//output status to screen and file
+        7:  298:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  299:	{
+        7:  300:		sprintf(str, "\tChecking current player's turn hasn't changed...");
+        7:  301:		customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  302:	}
+        -:  303:
+        -:  304:	//also check that player's turn hasn't changed 
+        7:  305:	if (tempG.whoseTurn != G->whoseTurn)
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  306:	{
+        -:  307:		//function modified turn inside card effect (shouldn't happen)
+    #####:  308:		passesCheck = overallTestPass = 0;
+        -:  309:	}
+        -:  310:
+        -:  311:	//output status to screen and file
+        7:  312:	if (detailedOutput)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  313:	{
+        7:  314:		if (passesCheck == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  315:		{
+        7:  316:			sprintf(str, "Passed.\n");
+        7:  317:			customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  318:		}
+        -:  319:		else
+        -:  320:		{
+    #####:  321:			sprintf(str, "Failed!!!!!\n");
+    #####:  322:			customPrintf(str, outputFile);
+call    0 never executed
+        -:  323:		}
+        -:  324:	}
+        -:  325:
+        7:  326:	free(str);
+        -:  327:
+        7:  328:	return overallTestPass;
+        -:  329:}
+        -:  330:
+        -:  331:/*
+        -:  332:	void testFullDeckCountFunction()
+        -:  333:	Parameters:
+        -:  334:		None.
+        -:  335:	Returns:
+        -:  336:		None.
+        -:  337:	Description:
+        -:  338:		This function will perform several tests of the fullDeckCount function
+        -:  339:		by calling the test harness function above. Test results will be
+        -:  340:		both output to screen and to a text file.
+        -:  341:*/
+function testFullDeckCountFunction called 1 returned 100% blocks executed 89%
+        1:  342:void testFullDeckCountFunction()
+        -:  343:{
+        -:  344:	//create two gameState objects
+        -:  345:	struct gameState G, backupG;
+        -:  346:
+        -:  347:	//set the initial player count to 4
+        1:  348:	int playerCount = 4;
+        -:  349:
+        -:  350:	//setting the playerIndex to 0'th player
+        1:  351:	int playerIndex = 0;
+        -:  352:
+        -:  353:	//variable to keep track of test number
+        1:  354:	int testnum = 1;
+        -:  355:
+        -:  356:	//initial supply cards
+        1:  357:	int k[10] = { adventurer, embargo, village, minion, mine, cutpurse,
+        -:  358:		sea_hag, remodel, smithy, council_room };
+        -:  359:
+        -:  360:	//random seed
+        1:  361:	int randomSeed = 1;
+        -:  362:
+        -:  363:	//loop counter
+        1:  364:	int i = 0;
+        -:  365:
+        -:  366:	//initialize the gameState object
+        1:  367:	int res = initializeGame(playerCount, k, randomSeed, &G);
+call    0 returned 100%
+        -:  368:	//this should always pass, if it doesn't we need to exit
+        1:  369:	assert(res == 0);
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+call    2 never executed
+        -:  370:
+        -:  371:	//initialze a string of all '\0' chars
+        1:  372:	char *str = malloc(sizeof(char) * MAX_STRING_SIZE);
+        1:  373:	memset(str, '\0', sizeof(char) * MAX_STRING_SIZE);
+        -:  374:
+        -:  375:	//create a file pointer to output file
+        1:  376:	FILE *outputFile = fopen("unittest3.out", "w");
+call    0 returned 100%
+        -:  377:
+        -:  378:	//output current test information
+        1:  379:	sprintf(str, "Test %d: testing fullDeckCount, looking for copper, with zero in any of player's decks.\n", testnum++);
+        1:  380:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  381:
+        -:  382:	//make copy of G for testing
+        1:  383:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  384:
+        -:  385:	//now manipulate the cards in the player's hand to be known values
+        1:  386:	backupG.handCount[playerIndex] = 0;
+        1:  387:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = silver;
+        1:  388:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = silver;
+        1:  389:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = gold;
+        1:  390:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = cutpurse;
+        1:  391:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = adventurer;
+        -:  392:
+        -:  393:	//also manipulate player's deck to be known values
+        -:  394:	//so that we enter all parts of the test function
+        1:  395:	backupG.deckCount[playerIndex] = 0;
+        1:  396:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  397:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  398:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  399:
+        -:  400:	//also manipulate discardDeck (should be zero anyways)
+        1:  401:	backupG.discardCount[playerIndex] = 0;
+        -:  402:
+        1:  403:	res = validateFullDeckCountFunction(playerIndex, copper, &backupG, 1, outputFile, 0, 1);
+call    0 returned 100%
+        -:  404:
+        -:  405:	//check the result and output status
+        1:  406:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  407:	{
+        1:  408:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  409:	}
+        -:  410:	else
+        -:  411:	{
+    #####:  412:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  413:	}
+        1:  414:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  415:
+        -:  416:
+        -:  417:	//output current test information
+        1:  418:	sprintf(str, "Test %d: testing fullDeckCount, looking for copper, with only 1 in player's hand.\n", testnum++);
+        1:  419:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  420:
+        -:  421:	//make copy of G for testing
+        1:  422:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  423:
+        -:  424:	//now manipulate the cards in the player's hand to be known values
+        1:  425:	backupG.handCount[playerIndex] = 0;
+        1:  426:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = copper;
+        1:  427:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = silver;
+        1:  428:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = gold;
+        1:  429:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = cutpurse;
+        1:  430:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = adventurer;
+        -:  431:
+        -:  432:	//also manipulate player's deck to be known values
+        -:  433:	//so that we enter all parts of the test function
+        1:  434:	backupG.deckCount[playerIndex] = 0;
+        1:  435:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  436:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  437:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  438:
+        -:  439:	//also manipulate discardDeck (should be zero anyways)
+        1:  440:	backupG.discardCount[playerIndex] = 0;
+        -:  441:
+        1:  442:	res = validateFullDeckCountFunction(playerIndex, copper, &backupG, 1, outputFile, 1, 1);
+call    0 returned 100%
+        -:  443:
+        -:  444:	//check the result and output status
+        1:  445:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  446:	{
+        1:  447:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  448:	}
+        -:  449:	else
+        -:  450:	{
+    #####:  451:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  452:	}
+        1:  453:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  454:
+        -:  455:	//output current test information
+        1:  456:	sprintf(str, "Test %d: testing fullDeckCount, looking for copper, with 1 in player's hand, and 1 in deck.\n", testnum++);
+        1:  457:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  458:
+        -:  459:	//make copy of G for testing
+        1:  460:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  461:
+        -:  462:	//now manipulate the cards in the player's hand to be known values
+        1:  463:	backupG.handCount[playerIndex] = 0;
+        1:  464:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = copper;
+        1:  465:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = silver;
+        1:  466:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = gold;
+        1:  467:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = cutpurse;
+        1:  468:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = adventurer;
+        -:  469:
+        -:  470:	//also manipulate player's deck to be known values
+        -:  471:	//so that we enter all parts of the test function
+        1:  472:	backupG.deckCount[playerIndex] = 0;
+        1:  473:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = copper;
+        1:  474:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  475:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  476:
+        -:  477:	//also manipulate discardDeck (should be zero anyways)
+        1:  478:	backupG.discardCount[playerIndex] = 0;
+        -:  479:
+        1:  480:	res = validateFullDeckCountFunction(playerIndex, copper, &backupG, 1, outputFile, 2, 1);
+call    0 returned 100%
+        -:  481:
+        -:  482:	//check the result and output status
+        1:  483:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  484:	{
+        1:  485:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  486:	}
+        -:  487:	else
+        -:  488:	{
+    #####:  489:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  490:	}
+        1:  491:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  492:
+        -:  493:	//output current test information
+        1:  494:	sprintf(str, "Test %d: testing fullDeckCount, looking for copper, with 1 in player's hand, 1 in deck, and 1 in discard.\n", testnum++);
+        1:  495:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  496:
+        -:  497:	//make copy of G for testing
+        1:  498:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  499:
+        -:  500:	//now manipulate the cards in the player's hand to be known values
+        1:  501:	backupG.handCount[playerIndex] = 0;
+        1:  502:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = copper;
+        1:  503:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = silver;
+        1:  504:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = gold;
+        1:  505:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = cutpurse;
+        1:  506:	backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = adventurer;
+        -:  507:
+        -:  508:	//also manipulate player's deck to be known values
+        -:  509:	//so that we enter all parts of the test function
+        1:  510:	backupG.deckCount[playerIndex] = 0;
+        1:  511:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = copper;
+        1:  512:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        1:  513:	backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  514:
+        -:  515:	//also manipulate discardDeck 
+        1:  516:	backupG.discardCount[playerIndex] = 0;
+        1:  517:	backupG.discard[playerIndex][backupG.discardCount[playerIndex]++] = copper;
+        1:  518:	backupG.discard[playerIndex][backupG.discardCount[playerIndex]++] = silver;
+        -:  519:
+        -:  520:
+        1:  521:	res = validateFullDeckCountFunction(playerIndex, copper, &backupG, 1, outputFile, 3, 1);
+call    0 returned 100%
+        -:  522:
+        -:  523:	//check the result and output status
+        1:  524:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  525:	{
+        1:  526:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  527:	}
+        -:  528:	else
+        -:  529:	{
+    #####:  530:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  531:	}
+        1:  532:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  533:
+        -:  534:	//output current test information
+        1:  535:	sprintf(str, "Test %d: testing fullDeckCount, looking for copper, with MAX_HAND (%d) in player's hand.\n", testnum++, MAX_HAND);
+        1:  536:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  537:
+        -:  538:	//make copy of G for testing
+        1:  539:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  540:
+        -:  541:	//now manipulate the cards in the player's hand to be known values
+        1:  542:	backupG.handCount[playerIndex] = 0;
+      501:  543:	for (i = 0; i < MAX_HAND; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  544:	{
+      500:  545:		backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = copper;
+        -:  546:	}
+        -:  547:
+        -:  548:	//also manipulate player's deck to be known values
+        -:  549:	//so that we enter all parts of the test function
+        1:  550:	backupG.deckCount[playerIndex] = 0;
+      501:  551:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  552:	{
+      500:  553:		backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  554:	}
+        -:  555:
+        -:  556:	//also manipulate discardDeck 
+        1:  557:	backupG.discardCount[playerIndex] = 0;
+      501:  558:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  559:	{
+      500:  560:		backupG.discard[playerIndex][backupG.discardCount[playerIndex]++] = silver;
+        -:  561:	}
+        -:  562:
+        -:  563:
+        1:  564:	res = validateFullDeckCountFunction(playerIndex, copper, &backupG, 1, outputFile, MAX_HAND, 1);
+call    0 returned 100%
+        -:  565:
+        -:  566:	//check the result and output status
+        1:  567:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  568:	{
+        1:  569:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  570:	}
+        -:  571:	else
+        -:  572:	{
+    #####:  573:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  574:	}
+        1:  575:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  576:
+        -:  577:	//output current test information
+        1:  578:	sprintf(str, "Test %d: testing fullDeckCount, looking for estate, with %d in player's hand, and %d in deck.\n", testnum++, MAX_HAND, MAX_DECK);
+        1:  579:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  580:
+        -:  581:	//make copy of G for testing
+        1:  582:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  583:
+        -:  584:	//now manipulate the cards in the player's hand to be known values
+        1:  585:	backupG.handCount[playerIndex] = 0;
+      501:  586:	for (i = 0; i < MAX_HAND; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  587:	{
+      500:  588:		backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = estate;
+        -:  589:	}
+        -:  590:
+        -:  591:	//also manipulate player's deck to be known values
+        -:  592:	//so that we enter all parts of the test function
+        1:  593:	backupG.deckCount[playerIndex] = 0;
+      501:  594:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  595:	{
+      500:  596:		backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = estate;
+        -:  597:	}
+        -:  598:
+        -:  599:	//also manipulate discardDeck 
+        1:  600:	backupG.discardCount[playerIndex] = 0;
+      501:  601:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  602:	{
+      500:  603:		backupG.discard[playerIndex][backupG.discardCount[playerIndex]++] = silver;
+        -:  604:	}
+        -:  605:
+        1:  606:	res = validateFullDeckCountFunction(playerIndex, estate, &backupG, 1, outputFile, MAX_HAND + MAX_DECK, 1);
+call    0 returned 100%
+        -:  607:
+        -:  608:	//check the result and output status
+        1:  609:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  610:	{
+        1:  611:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  612:	}
+        -:  613:	else
+        -:  614:	{
+    #####:  615:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  616:	}
+        1:  617:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  618:
+        -:  619:	//output current test information
+        1:  620:	sprintf(str, "Test %d: testing fullDeckCount, looking for adventurer, with %d in player's hand, %d in deck, and %d in discard.\n", testnum++, MAX_HAND, MAX_DECK, MAX_DECK);
+        1:  621:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  622:
+        -:  623:	//make copy of G for testing
+        1:  624:	memcpy(&backupG, &G, sizeof(struct gameState));
+        -:  625:
+        -:  626:	//now manipulate the cards in the player's hand to be known values
+        1:  627:	backupG.handCount[playerIndex] = 0;
+      501:  628:	for (i = 0; i < MAX_HAND; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  629:	{
+      500:  630:		backupG.hand[playerIndex][backupG.handCount[playerIndex]++] = adventurer;
+        -:  631:	}
+        -:  632:
+        -:  633:	//also manipulate player's deck to be known values
+        -:  634:	//so that we enter all parts of the test function
+        1:  635:	backupG.deckCount[playerIndex] = 0;
+      501:  636:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  637:	{
+      500:  638:		backupG.deck[playerIndex][backupG.deckCount[playerIndex]++] = adventurer;
+        -:  639:	}
+        -:  640:
+        -:  641:	//also manipulate discardDeck 
+        1:  642:	backupG.discardCount[playerIndex] = 0;
+      501:  643:	for (i = 0; i < MAX_DECK; i++)
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+        -:  644:	{
+      500:  645:		backupG.discard[playerIndex][backupG.discardCount[playerIndex]++] = adventurer;
+        -:  646:	}
+        -:  647:
+        1:  648:	res = validateFullDeckCountFunction(playerIndex, adventurer, &backupG, 1, outputFile, MAX_HAND + MAX_DECK + MAX_DECK, 1);
+call    0 returned 100%
+        -:  649:
+        -:  650:	//check the result and output status
+        1:  651:	if (res == 1)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  652:	{
+        1:  653:		sprintf(str, "------------- OVERALL TEST PASSED ---------------\n\n");
+        -:  654:	}
+        -:  655:	else
+        -:  656:	{
+    #####:  657:		sprintf(str, "------------- OVERALL TEST FAILED!!!! ---------------\n\n");
+        -:  658:	}
+        1:  659:	customPrintf(str, outputFile);
+call    0 returned 100%
+        -:  660:
+        -:  661:	//close the output file
+        1:  662:	fclose(outputFile);
+call    0 returned 100%
+        -:  663:
+        -:  664:	//free dynamic memory
+        1:  665:	free(str);
+        1:  666:}
+        -:  667:
+        -:  668:/*
+        -:  669:	int main()
+        -:  670:	Parameters:
+        -:  671:		None.
+        -:  672:	Returns:
+        -:  673:		int 0
+        -:  674:	Description:
+        -:  675:		main launching point for the program.
+        -:  676:*/
+function main called 1 returned 100% blocks executed 100%
+        1:  677:int main()
+        -:  678:{
+        1:  679:	testFullDeckCountFunction();
+call    0 returned 100%
+        1:  680:	return 0;
+        -:  681:}

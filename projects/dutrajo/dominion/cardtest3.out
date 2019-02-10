@@ -1,0 +1,52 @@
+Test 1: Playing Card 'smithy' when player's deck is full (MAX_DECK: 500).
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 2: Playing Card 'smithy' when deck has exactly 4 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 3: Playing Card 'smithy' when deck has exactly 3 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Passed.
+	Checking player's hand actually received 3 cards...Passed.
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Passed.
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
+Test 4: Playing Card 'smithy' when deck has exactly 0 cards in it.
+	Running cardEffect For Smithy....Expected: 0, function returned: 0. Passed.
+	Checking player's hand count has increased by 3 cards...Failed!!!!!
+	Checking player's hand actually received 3 cards...Failed!!!!!
+	Checking cards player received are valid...Passed.
+	Checking received cards didn't come from supply...Passed.
+	Checking received cards came from player's deck...Failed!!!!!
+	Checking played card went to discard pile...Failed!!!!!
+	Checking other player's hands, decks, and discards weren't changed...Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+------------- OVERALL TEST FAILED!!!! ---------------
+
