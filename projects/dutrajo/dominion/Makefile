@@ -32,16 +32,16 @@ rngs.o: rngs.h rngs.c
 dominion.o: dominion.h dominion.c rngs.o
 	gcc -c dominion.c -g  $(CFLAGS)
 
-unittest1.o:
+unittest1.o: rngs.o dominion.o unittest1.c
 	gcc -c unittest1.c -g $(CFLAGS)
 
-unittest2.o:
+unittest2.o: rngs.o dominion.o unittest2.c
 	gcc -c unittest2.c -g $(CFLAGS)
 
-unittest3.o:
+unittest3.o: rngs.o dominion.o unittest3.c
 	gcc -c unittest3.c -g $(CFLAGS)
 
-unittest4.o:
+unittest4.o: rngs.o dominion.o unittest4.c
 	gcc -c unittest4.c -g $(CFLAGS)
 
 cardtest1.o: rngs.o dominion.o cardtest1.c
