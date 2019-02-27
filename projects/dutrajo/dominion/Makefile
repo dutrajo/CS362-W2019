@@ -1,39 +1,39 @@
-CFLAGS= -Wall -fpic -coverage -lm -std=c99
+CFLAGS= -Wall -ftest-coverage -fprofile-arcs -fno-exceptions -O0 -lm 
 
+default: randomtestcard1 randomtestcard2 randomtestadventurer runtests 
+
+
+randomtestcard1: rngs.o dominion.o randomtestcard1.o
+	gcc -o randomtestcard1 -g dominion.o rngs.o randomtestcard1.o $(CFLAGS)
+
+randomtestcard2: rngs.o dominion.o randomtestcard2.o
+	gcc -o randomtestcard2 -g dominion.o rngs.o randomtestcard2.o $(CFLAGS)
+
+randomtestadventurer: rngs.o dominion.o randomtestadventurer.o
+	gcc -o randomtestadventurer -g dominion.o rngs.o randomtestadventurer.o $(CFLAGS)
+	
 rngs.o: rngs.h rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
 
 dominion.o: dominion.h dominion.c rngs.o
 	gcc -c dominion.c -g  $(CFLAGS)
 
-playdom: dominion.o playdom.c
-	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
-#To run playdom you need to entere: ./playdom <any integer number> like ./playdom 10*/
-testDrawCard: testDrawCard.c dominion.o rngs.o
-	gcc  -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
+randomtestcard1.o: rngs.o dominion.o randomtestcard1.c
+	gcc -c randomtestcard1.c -g $(CFLAGS)
 
-badTestDrawCard: badTestDrawCard.c dominion.o rngs.o
-	gcc -o badTestDrawCard -g  badTestDrawCard.c dominion.o rngs.o $(CFLAGS)
+randomtestcard2.o: rngs.o dominion.o randomtestcard2.c
+	gcc -c randomtestcard2.c -g $(CFLAGS)
 
-testBuyCard: testDrawCard.c dominion.o rngs.o
-	gcc -o testDrawCard -g  testDrawCard.c dominion.o rngs.o $(CFLAGS)
+randomtestadventurer.o: rngs.o dominion.o randomtestadventurer.c
+	gcc -c randomtestadventurer.c -g $(CFLAGS)
 
-testAll: dominion.o testSuite.c
-	gcc -o testSuite testSuite.c -g  dominion.o rngs.o $(CFLAGS)
-
-interface.o: interface.h interface.c
-	gcc -c interface.c -g  $(CFLAGS)
-
-runtests: testDrawCard 
-	./testDrawCard &> unittestresult.out
-	gcov dominion.c >> unittestresult.out
-	cat dominion.c.gcov >> unittestresult.out
-
-
-player: player.c interface.o
-	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
-
-all: playdom player 
-
+runtests: 
+	./randomtestcard1 > /dev/null
+	gcov -b dominion.c >> randomtestcard1.out 
+	./randomtestcard2 > /dev/null
+	gcov -b dominion.c >> randomtestcard2.out 
+	./randomtestadventurer > /dev/null
+	gcov -b dominion.c >> randomtestadventurer.out 
+	
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o *.gcov *.gcda *.gcno randomtestcard1 randomtestcard2 randomtestadventurer 
