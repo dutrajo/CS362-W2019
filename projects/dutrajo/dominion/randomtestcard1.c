@@ -258,12 +258,6 @@ int validateStewardCardEffect(
 		//reset check
 		passesCheck = 1;
 
-		sprintf(strPass, "Passed.\n");
-		sprintf(strFail, "Failed!!!\n");
-
-		passesCheck = assertTrue(passesCheck, 1, strPass, strFail, outputFile);
-		overallTestPass &= passesCheck;
-
 		//reset check pass
 		passesCheck = 1;
 
