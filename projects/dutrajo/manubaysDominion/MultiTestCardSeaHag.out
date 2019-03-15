@@ -1,0 +1,1611 @@
+Test 1: Playing Card 'sea hag', playerIndex: 1, choice1: -1543209962, choice2: 1278087101, choice3: 872652151
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: Playing Card 'sea hag', playerIndex: 0, choice1: -1557141770, choice2: -1709346006, choice3: -1569694553
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: Playing Card 'sea hag', playerIndex: 3, choice1: -745290403, choice2: -2031675985, choice3: 953764381
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: Playing Card 'sea hag', playerIndex: 1, choice1: -887664326, choice2: 2053366292, choice3: -1640111135
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: Playing Card 'sea hag', playerIndex: 1, choice1: 757040760, choice2: -1824483187, choice3: -1563047745
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: Playing Card 'sea hag', playerIndex: 0, choice1: 318049023, choice2: -483288524, choice3: -96669609
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: Playing Card 'sea hag', playerIndex: 2, choice1: -122452412, choice2: -1482175507, choice3: 306300823
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 8: Playing Card 'sea hag', playerIndex: 1, choice1: 1260956684, choice2: 414738021, choice3: -573436489
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 9: Playing Card 'sea hag', playerIndex: 3, choice1: -526625312, choice2: -663598417, choice3: 550806700
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 10: Playing Card 'sea hag', playerIndex: 3, choice1: 1680560724, choice2: 1787262995, choice3: 865343034
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 11: Playing Card 'sea hag', playerIndex: 0, choice1: 1502046064, choice2: 1515512043, choice3: 361509147
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 12: Playing Card 'sea hag', playerIndex: 3, choice1: 1527790559, choice2: -1863320718, choice3: 636955389
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 13: Playing Card 'sea hag', playerIndex: 3, choice1: 1819610415, choice2: 476139457, choice3: 701433445
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 14: Playing Card 'sea hag', playerIndex: 1, choice1: 786494295, choice2: -1949253866, choice3: 240095023
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 15: Playing Card 'sea hag', playerIndex: 1, choice1: 2017838323, choice2: -119242175, choice3: 540729919
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 16: Playing Card 'sea hag', playerIndex: 1, choice1: 1684076963, choice2: 793227027, choice3: 1860003516
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 17: Playing Card 'sea hag', playerIndex: 2, choice1: -651972307, choice2: 121847839, choice3: 706957866
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 18: Playing Card 'sea hag', playerIndex: 3, choice1: 877826354, choice2: 727578512, choice3: 1826032257
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 19: Playing Card 'sea hag', playerIndex: 3, choice1: 1078496941, choice2: 2129008346, choice3: 8213617
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 20: Playing Card 'sea hag', playerIndex: 1, choice1: 1097344035, choice2: 125067304, choice3: 958916415
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 21: Playing Card 'sea hag', playerIndex: 2, choice1: 2058177274, choice2: 1966178978, choice3: 507007429
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 22: Playing Card 'sea hag', playerIndex: 2, choice1: -865131037, choice2: 1783429020, choice3: -1158156461
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 23: Playing Card 'sea hag', playerIndex: 2, choice1: -294397497, choice2: -1671857259, choice3: 2111644636
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 24: Playing Card 'sea hag', playerIndex: 2, choice1: -402545872, choice2: -1906277280, choice3: 1937911859
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 25: Playing Card 'sea hag', playerIndex: 2, choice1: 385642143, choice2: 163402102, choice3: -696092427
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 26: Playing Card 'sea hag', playerIndex: 2, choice1: 1914450060, choice2: -218347784, choice3: -1987080724
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 27: Playing Card 'sea hag', playerIndex: 1, choice1: -425235265, choice2: -1569105407, choice3: 192897806
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 28: Playing Card 'sea hag', playerIndex: 1, choice1: 1848642363, choice2: 1509663016, choice3: -693495440
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 29: Playing Card 'sea hag', playerIndex: 3, choice1: 996815600, choice2: -507428365, choice3: -519826063
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 30: Playing Card 'sea hag', playerIndex: 3, choice1: 466471501, choice2: -1043029102, choice3: 622635464
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 31: Playing Card 'sea hag', playerIndex: 2, choice1: 722075745, choice2: -1718511299, choice3: -2104170123
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 32: Playing Card 'sea hag', playerIndex: 1, choice1: -902145253, choice2: 251237190, choice3: -1790880538
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 33: Playing Card 'sea hag', playerIndex: 2, choice1: -357979146, choice2: 714717456, choice3: 1375365550
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 34: Playing Card 'sea hag', playerIndex: 0, choice1: 156781891, choice2: -239850226, choice3: -1899617399
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 35: Playing Card 'sea hag', playerIndex: 3, choice1: 914558337, choice2: 1392847098, choice3: -1021269019
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 36: Playing Card 'sea hag', playerIndex: 1, choice1: -340095858, choice2: 2115975322, choice3: -2096148013
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 37: Playing Card 'sea hag', playerIndex: 3, choice1: -185190616, choice2: 855815323, choice3: -2125511203
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 38: Playing Card 'sea hag', playerIndex: 0, choice1: -2040912535, choice2: -1203476460, choice3: 458727543
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 39: Playing Card 'sea hag', playerIndex: 3, choice1: 1502558251, choice2: 696863821, choice3: 1298120522
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 40: Playing Card 'sea hag', playerIndex: 3, choice1: 1490613272, choice2: -37319237, choice3: -1998674201
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 41: Playing Card 'sea hag', playerIndex: 2, choice1: 894471392, choice2: -1092456847, choice3: -1167427849
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 42: Playing Card 'sea hag', playerIndex: 3, choice1: 1880098033, choice2: -1550933843, choice3: 1906394654
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 43: Playing Card 'sea hag', playerIndex: 2, choice1: -772386461, choice2: -1062353163, choice3: -723525785
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 44: Playing Card 'sea hag', playerIndex: 3, choice1: -1475788026, choice2: -1048909852, choice3: -1574015028
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 45: Playing Card 'sea hag', playerIndex: 3, choice1: 144427914, choice2: -2026362639, choice3: -15160589
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 46: Playing Card 'sea hag', playerIndex: 2, choice1: -2110056726, choice2: 920437655, choice3: 381166242
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 47: Playing Card 'sea hag', playerIndex: 1, choice1: 1299667915, choice2: 782769591, choice3: -2036985564
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 48: Playing Card 'sea hag', playerIndex: 2, choice1: 601115106, choice2: -512343994, choice3: -1103222625
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 49: Playing Card 'sea hag', playerIndex: 3, choice1: 1735819746, choice2: -681170428, choice3: -1745152075
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 50: Playing Card 'sea hag', playerIndex: 3, choice1: 873417665, choice2: 530263987, choice3: 1312407879
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 1, deck cards did change (+1 card curse)..Passed.
+	Checking player: 1, discard count changed +1 card..Passed.
+	Checking player: 1, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 51: Playing Card 'sea hag', playerIndex: 1, choice1: 1, choice2: 2, choice3: 3
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 52: Playing Card 'sea hag', playerIndex: 1, choice1: 1, choice2: 2, choice3: 3
+	Running cardEffect For Sea Hag....Expected 0, function returned 0. Passed.
+	Checking player's hand count decreased by 1 card (played card)...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking player's deck count stayed the same...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking all other player's cards (+1 curse to all other players decks).
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 0, deck cards did change (+1 card curse)..Passed.
+	Checking player: 0, discard count changed +1 card..Passed.
+	Checking player: 0, discard cards correctly changed..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 2, deck cards did change (+1 card curse)..Passed.
+	Checking player: 2, discard count changed +1 card..Passed.
+	Checking player: 2, discard cards correctly changed..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change (+1 curse, -1 top card)..Passed.
+	Checking player: 3, deck cards did change (+1 card curse)..Passed.
+	Checking player: 3, discard count changed +1 card..Passed.
+	Checking player: 3, discard cards correctly changed..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+*******************************************
+********** COVERAGE SECTION ***************
+*******************************************
+Getting dominion.c Coverage...
+File 'dominion.c'
+Lines executed:27.84% of 564
+Branches executed:26.62% of 417
+Taken at least once:20.14% of 417
+Calls executed:21.43% of 98
+Creating 'dominion.c.gcov'
+
+Getting Sea Hag Section of dominion.c.gcov...
+        -:  717:
+        -:  718:// Performs the actions of the sea hag card
+function SeaHagAction called 52 returned 100% blocks executed 100%
+       52:  719:int SeaHagAction(struct gameState *state)
+        -:  720:{
+       52:  721:	int currentPlayer = whoseTurn(state);
+call    0 returned 100%
+        -:  722:
+      260:  723:	for (int i = 0; i < state->numPlayers; i++) {
+branch  0 taken 80%
+branch  1 taken 20% (fallthrough)
+      208:  724:		if (/*BUG: i == currentPlayer, changed to !=*/i != currentPlayer) {
+branch  0 taken 75% (fallthrough)
+branch  1 taken 25%
+      156:  725:			state->discard[i][state->discardCount[i]++] = state->deck[i][(state->deckCount[i]--) - 1];		
+        -:  726:
+        -:  727:			/*BUG: THE FOLLOWING WAS BUGGY TO BEGIN WITH IN ORIGINAL DOMINION*/
+        -:  728:			/* so i'm fixing it -dutrajo*/
+        -:  729:			//state->deckCount[i]--;
+        -:  730:			//state->discardCount[i]++;
+        -:  731:			//state->deck[i][state->deckCount[i]--] = curse;//Top card now a curse
+        -:  732:			/* END OF ORIGINAL BUGGY DOMINION CODE*/
+        -:  733:
+        -:  734:			/*dutrajo - my addition*/
+      156:  735:			state->deck[i][state->deckCount[i]++] = curse;//Top card now a curse
+        -:  736:		}
+        -:  737:	}
+        -:  738:
+        -:  739:	/*dutrajo - now discard the played card*/
+       52:  740:	state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][(state->handCount[currentPlayer]--) - 1];
+        -:  741:
+       52:  742:	return 0;
+        -:  743:}
+        -:  744:
+*******************************************
+********* END OF COVERAGE SECTION *********
+*******************************************
+ 
+ 

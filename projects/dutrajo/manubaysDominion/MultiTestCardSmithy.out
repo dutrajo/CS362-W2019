@@ -1,0 +1,1739 @@
+Test 1: Playing Card 'smithy', playerIndex: 3, choice1: 1678160898, choice2: -864122898, choice3: 459107949
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 2: Playing Card 'smithy', playerIndex: 0, choice1: 1009705032, choice2: -690511490, choice3: 928750940
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 3: Playing Card 'smithy', playerIndex: 2, choice1: -771880543, choice2: -977602945, choice3: -1170397895
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 4: Playing Card 'smithy', playerIndex: 1, choice1: 538942754, choice2: 1777930451, choice3: 1601338513
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 5: Playing Card 'smithy', playerIndex: 0, choice1: 1852658188, choice2: -1927834537, choice3: -121214706
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 6: Playing Card 'smithy', playerIndex: 1, choice1: -1978612419, choice2: 1633568398, choice3: -1186834067
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 7: Playing Card 'smithy', playerIndex: 3, choice1: 384927235, choice2: -73193987, choice3: -2035709214
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 8: Playing Card 'smithy', playerIndex: 0, choice1: -2071307592, choice2: -1452925076, choice3: 454093318
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 9: Playing Card 'smithy', playerIndex: 0, choice1: -384432004, choice2: 1316659826, choice3: 92960906
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 10: Playing Card 'smithy', playerIndex: 0, choice1: 1311556657, choice2: 1818891407, choice3: 2027294808
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 11: Playing Card 'smithy', playerIndex: 3, choice1: 344105600, choice2: 871377644, choice3: -567410936
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 12: Playing Card 'smithy', playerIndex: 3, choice1: 1643779051, choice2: 1555087363, choice3: 482429898
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 13: Playing Card 'smithy', playerIndex: 1, choice1: -636340504, choice2: -1330122928, choice3: 1076876457
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 14: Playing Card 'smithy', playerIndex: 3, choice1: -730728698, choice2: -1979462576, choice3: 1262814706
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 15: Playing Card 'smithy', playerIndex: 1, choice1: 2069991617, choice2: -1365918415, choice3: -130965786
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 16: Playing Card 'smithy', playerIndex: 0, choice1: 1375943806, choice2: 247024263, choice3: 1146011512
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 17: Playing Card 'smithy', playerIndex: 3, choice1: 2019177012, choice2: -504000435, choice3: -533955892
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 18: Playing Card 'smithy', playerIndex: 1, choice1: 1878870500, choice2: 786964485, choice3: 1991011098
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 19: Playing Card 'smithy', playerIndex: 1, choice1: -1658313752, choice2: 1386295439, choice3: -1316395353
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 20: Playing Card 'smithy', playerIndex: 0, choice1: 248039061, choice2: -1060635659, choice3: 1805192396
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 21: Playing Card 'smithy', playerIndex: 0, choice1: -2080535366, choice2: -1327538135, choice3: 1696409074
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 22: Playing Card 'smithy', playerIndex: 2, choice1: 1693038534, choice2: 1703065007, choice3: 734989083
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 23: Playing Card 'smithy', playerIndex: 3, choice1: -2045088225, choice2: 896669405, choice3: -1171360880
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 24: Playing Card 'smithy', playerIndex: 1, choice1: -986826091, choice2: 614443439, choice3: 1555727764
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 25: Playing Card 'smithy', playerIndex: 2, choice1: -1146882975, choice2: 1980262962, choice3: 1326128144
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 26: Playing Card 'smithy', playerIndex: 1, choice1: 1193103684, choice2: 696033281, choice3: -1995481516
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 27: Playing Card 'smithy', playerIndex: 2, choice1: -525702035, choice2: 881718402, choice3: 121228421
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 28: Playing Card 'smithy', playerIndex: 0, choice1: 1110129868, choice2: 1277506044, choice3: -980530689
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 29: Playing Card 'smithy', playerIndex: 2, choice1: 267555257, choice2: 1630351719, choice3: 285004494
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 30: Playing Card 'smithy', playerIndex: 3, choice1: 1277084658, choice2: 760633092, choice3: 810907538
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 31: Playing Card 'smithy', playerIndex: 1, choice1: 112454365, choice2: 1792398566, choice3: -1914636650
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 32: Playing Card 'smithy', playerIndex: 2, choice1: -1588834062, choice2: 504409106, choice3: 1486536010
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 33: Playing Card 'smithy', playerIndex: 3, choice1: -1665073602, choice2: 1326887612, choice3: 29965934
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 34: Playing Card 'smithy', playerIndex: 3, choice1: 1473630552, choice2: 1667100901, choice3: 1718706983
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 35: Playing Card 'smithy', playerIndex: 3, choice1: -1547806333, choice2: -2095860950, choice3: -2004939854
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 36: Playing Card 'smithy', playerIndex: 3, choice1: 1997676461, choice2: -1750489392, choice3: 1265208266
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 37: Playing Card 'smithy', playerIndex: 1, choice1: 423253839, choice2: 562298206, choice3: -1384713735
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 38: Playing Card 'smithy', playerIndex: 3, choice1: 127889712, choice2: -985494113, choice3: -1978694314
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 39: Playing Card 'smithy', playerIndex: 0, choice1: -1343325083, choice2: 1482142562, choice3: 423911043
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 40: Playing Card 'smithy', playerIndex: 0, choice1: -765406643, choice2: -874805033, choice3: -613870541
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 41: Playing Card 'smithy', playerIndex: 3, choice1: 38355964, choice2: -946360879, choice3: 1207483368
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 42: Playing Card 'smithy', playerIndex: 2, choice1: -873554413, choice2: 1480413210, choice3: 768136
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 43: Playing Card 'smithy', playerIndex: 1, choice1: -1359094100, choice2: -1397809962, choice3: -1827758220
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 44: Playing Card 'smithy', playerIndex: 3, choice1: 555689351, choice2: -2042042235, choice3: 1998652410
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 45: Playing Card 'smithy', playerIndex: 2, choice1: -1069866185, choice2: 1284666822, choice3: 441165026
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 46: Playing Card 'smithy', playerIndex: 3, choice1: -80953232, choice2: 1858119484, choice3: 875372102
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 47: Playing Card 'smithy', playerIndex: 2, choice1: -487295328, choice2: 412820789, choice3: -17225985
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 48: Playing Card 'smithy', playerIndex: 2, choice1: -2006197423, choice2: 1900742836, choice3: 2050548131
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 49: Playing Card 'smithy', playerIndex: 1, choice1: 1347962263, choice2: -1613143167, choice3: -1675650415
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 50: Playing Card 'smithy', playerIndex: 3, choice1: -1101734554, choice2: 1609471258, choice3: 117137277
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 1, hand count didn't change..Passed.
+	Checking player: 1, hand cards didn't change..Passed.
+	Checking player: 1, deck count didn't change..Passed.
+	Checking player: 1, deck cards didn't change..Passed.
+	Checking player: 1, discard count didn't change..Passed.
+	Checking player: 1, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 51: Playing Card 'smithy', playerIndex: 1, choice1: 1, choice2: 2, choice3: 3
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 52: Playing Card 'smithy', playerIndex: 1, choice1: 1, choice2: 2, choice3: 3
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+Test 53: Playing Card 'smithy', playerIndex: 1, choice1: 1, choice2: 2, choice3: 3
+	Running cardEffect For Smithy....Expected 0, function returned 0. Passed.
+	Checking player's hand count increased by 3 cards...Passed.
+	Checking player's deck count reduced by 3 cards...Passed.
+	Checking player's new hand cards came from players deck...Passed.
+	Checking supply counts didn't change...Passed.
+	Checking played card was moved to discard pile...Passed.
+	Checking cards added to discard + added to hand = lost from deck (none trashed)...Passed.
+	Checking all other player's cards for any modifications.
+	Checking player: 0, hand count didn't change..Passed.
+	Checking player: 0, hand cards didn't change..Passed.
+	Checking player: 0, deck count didn't change..Passed.
+	Checking player: 0, deck cards didn't change..Passed.
+	Checking player: 0, discard count didn't change..Passed.
+	Checking player: 0, discard cards didn't change..Passed.
+	Checking player: 2, hand count didn't change..Passed.
+	Checking player: 2, hand cards didn't change..Passed.
+	Checking player: 2, deck count didn't change..Passed.
+	Checking player: 2, deck cards didn't change..Passed.
+	Checking player: 2, discard count didn't change..Passed.
+	Checking player: 2, discard cards didn't change..Passed.
+	Checking player: 3, hand count didn't change..Passed.
+	Checking player: 3, hand cards didn't change..Passed.
+	Checking player: 3, deck count didn't change..Passed.
+	Checking player: 3, deck cards didn't change..Passed.
+	Checking player: 3, discard count didn't change..Passed.
+	Checking player: 3, discard cards didn't change..Passed.
+	Checking current player's turn hasn't changed...Passed.
+	Checking player's coins weren't changed..Passed.
+	Checking player's actions were changed as expected..Passed.
+------------- OVERALL TEST PASSED ---------------
+
+*******************************************
+********** COVERAGE SECTION ***************
+*******************************************
+Getting dominion.c Coverage...
+File 'dominion.c'
+Lines executed:25.00% of 564
+Branches executed:25.66% of 417
+Taken at least once:18.71% of 417
+Calls executed:16.33% of 98
+Creating 'dominion.c.gcov'
+
+Getting Smithy Section of dominion.c.gcov...
+        -:  678:
+        -:  679:// Performs the actions of the smithy card
+function SmithyAction called 53 returned 100% blocks executed 100%
+       53:  680:int SmithyAction(struct gameState *state, int handPos)
+        -:  681:{
+       53:  682:	int currentPlayer = whoseTurn(state);
+call    0 returned 100%
+        -:  683:
+        -:  684:	//discard played card
+       53:  685:	state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][(state->handCount[currentPlayer]--) - 1];
+        -:  686:
+        -:  687:
+        -:  688:	//+3 Cards
+      212:  689:	for (/*BUG: int i = 1, changed to:*/int i = 0; i < 3; i++)
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+        -:  690:	{
+      159:  691:		drawCard(currentPlayer, state);
+call    0 returned 100%
+        -:  692:	}
+        -:  693:
+        -:  694:	//discard card from hand
+        -:  695:	//discardCard(handPos, currentPlayer, state, 0);
+       53:  696:	return 0;
+        -:  697:}
+        -:  698:
+*******************************************
+********* END OF COVERAGE SECTION *********
+*******************************************
+ 
+ 
